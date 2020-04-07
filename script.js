@@ -225,7 +225,7 @@ BODY.addEventListener('keyup', (event) => {
     OUTPUT.focus();
 });
 
-let activeElement = '';
+let activeElement = undefined;
 
 KEYBOARD.addEventListener('mousedown', (event) => {
     OUTPUT.focus();
@@ -275,8 +275,13 @@ KEYBOARD.addEventListener('mousedown', (event) => {
 });
 
 document.addEventListener('mouseup', (event) => {
-    if (event.target.tagName === 'HTML' || event.target.tagName === 'DIV' || event.target.tagName === 'SPAN') activeElement.classList.remove('active');
-    OUTPUT.focus();
+    if (activeElement == undefined) {
+        OUTPUT.focus();
+    } else
+    if (event.target.tagName === 'HTML' || event.target.tagName === 'DIV' || event.target.tagName === 'SPAN') {
+        activeElement.classList.remove('active');
+        OUTPUT.focus();
+    }
 });
 
 OUTPUT.addEventListener('keydown', (event) => {
