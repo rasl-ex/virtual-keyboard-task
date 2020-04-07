@@ -1,4 +1,4 @@
-### 1. [Task](http://https://rasl-ex.github.io/virtual-keyboard-task/ "Task")
+### 1. [Task](https://rasl-ex.github.io/virtual-keyboard-task/)
 ### 2. [Demo](https://wonderful-swartz-d8b98d.netlify.com/)
 ### 3. Completion: 2020-04-07 / deadline: 2020-04-07
 
